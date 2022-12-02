@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display',
+        sans-serif;
+    min-height: 100vh;
+    background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn1 {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+}
+
+.btn1:hover{
+    background:rgb(62, 164, 253);
+}
+
+.btn2{
+    background-color: transparent;
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+
+.btn2:active{
+    font-size:16px;
+}
+
+.title{
+    padding: 10px;
+    color: hsl(223, 47%, 23%);
+    font-weight: bold; 
+}
+
+p{
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+.music-box{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+    
+}
+.music-box img{
+    display: flex;
+}
+
+.music-box .abc {
+    margin-left: 20px;
+}
+
+.music-box .abc h1{
+    padding: 4px;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+
+.music-box .abc p{
+    font-size: 14px;
+}
+
+.music-box a {
+    color: blue;
+    margin-left: auto;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+@media only screen and (min-width:1440px) {
+    .container{
+        max-width: 50%;
+    }
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+    .title{
+        font-size: 13px;
+    }
+    p{
+        font-size: 9px;
+    }
+    div.music-box {
+        padding: 12px;
+    }
+
+
+}
+
